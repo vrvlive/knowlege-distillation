@@ -14,9 +14,8 @@ This code base can be used for continuing experiments with Knowledge distillatio
 
 - Framework - PyTorch <sup>[5]</sup> and PyTorch-Lightning <sup>[6]</sup>
 - Image resolution - 224
-- Datasets - Any classification datasets that supports the resolution e.g. Imagenette, Cats Vs Dogs etc. Adjust the number of classes in command line arguments
+- Datasets - Any classification dataset that supports the resolution e.g. Imagenette, Cats Vs Dogs etc. Adjust the number of classes in command line arguments
 - Most of the code should be self explanatory. Check commandline arguments for default options.
-- Please refer to PyTorch Lightning <sup>[6]</sup> for saving and loading a checkpoint if needed in your training. This experiment was stopped prematurely due to the existence of other frameworks offering similar functionality for experimentation
 - An nvidia docker dockerfile with necessary dependenciess is provided for creating your own docker image. Please map application and dataset volumes to train using docker.
 - Please refer to PyTorch Lightning <sup>[6]</sup> for saving and loading a checkpoint if needed in your training. This experiment was stopped prematurely due to the existence of other frameworks offering similar functionality for experimentation <sup>[4]</sup>.
 
