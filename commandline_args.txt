@@ -1,0 +1,19 @@
+{
+  "data_dir": "~/datasets/imagenette2",
+  "train_data": "train",
+  "val_data": "val",
+  "train_teacher": true,
+  "distill": false,
+  "student_model": "vgg16",
+  "teacher_model": "densenet121",
+  "image_size": 224,
+  "num_classes": 10,
+  "default_root_dir": "logs",
+  "max_epochs": 25,
+  "gpus": 1,
+  "batch_size": 48,
+  "num_workers": 4,
+  "learning_rate": 0.001,
+  "momentum": 0.9,
+  "fast_dev_run": false
+}

@@ -1,0 +1,4 @@
+torch==1.5.1
+torchvision==0.6.1
+pytorch-lightning==0.8.1
+tensorboard==2.2.2
