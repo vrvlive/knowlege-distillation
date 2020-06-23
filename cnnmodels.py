@@ -42,7 +42,7 @@ class SimpleClassifier(CnnClassifier):
     def __init__(self, image_size, num_classes, pre_trained):
         super(SimpleClassifier, self).__init__(image_size=image_size, num_classes=num_classes,
                                                pre_trained=pre_trained, name='simple')
-        # input is 224x224x3 , output is 2
+    
         self._conv1 = nn.Conv2d(3, 16, 3, padding=1)
         self._conv2 = nn.Conv2d(16, 32, 3, padding=1)
         self._conv3 = nn.Conv2d(32, 64, 3, padding=1)
@@ -52,7 +52,6 @@ class SimpleClassifier(CnnClassifier):
         self._dropout = nn.Dropout(0.25)
 
     def forward(self, x):
-        # add sequence of convolutional and max pooling layers
         x = self._pool(F.relu(self._conv1(x)))
         x = self._pool(F.relu(self._conv2(x)))
         x = self._pool(F.relu(self._conv3(x)))
