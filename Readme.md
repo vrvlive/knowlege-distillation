@@ -4,7 +4,7 @@ This experiment started with a strong intuition that, specifying a hard probabil
 
 ## Architecture
 
-![Architecture](/knowledge_distillation_current.jpg "Title")
+![Architecture](/images/knowledge_distillation_current.png "Title")
 
 In this approach, the MSE loss is calculated on the logits before the softmax funtion. However the [Kullback-Leibler divergence Loss](https://pytorch.org/docs/master/generated/torch.nn.KLDivLoss.html) can be used on the probability distribution after passing the result through a Softmax function.
 
@@ -36,8 +36,8 @@ This code base can be used for continuing experiments with Knowledge distillatio
 
 The following graphs gives the validation accuracy of the same student model on the same dataset when trained with and without knowledge distillation. The higher accuracy graph shows the distillation result.
 
-![Result 1](/result1.png "Title")
-![Result 1](/result2.png "Title")
+![Result 1](/images/result1.png "Title")
+![Result 1](/images/result2.png "Title")
 
 ## References
 
